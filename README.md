@@ -1,4 +1,26 @@
-shortcut
+Shortcut.js
 ========
 
-A keyboard shortcut library
+A keyboard shortcut library, shortcut.js listens for common keyboard shortcuts and triggers custom events for you to use.
+
+## Shortcuts and the events they trigger
+
+Shortcut | Event Name
+---------|-----------
+    j    | shortcutNextItem
+    k    | shortcutPrevItem
+    n    | shortcutNewItem
+    o    | shortcutOpenItem
+    /    | shortcutSearchItems
+    .    | shortcutLoadItems
+
+## Listening for an event
+```js
+document.addEventListener('shortcutNextItem', function() {
+  // your code here
+});
+```
+
+## Standardization
+
+Most of the big web applications ( Facebook, Twitter ) have a handy set of keyboard shortcuts but there is no standardization amongst these sites. A shared library such as shortcut.js could help web applications share a common set of keyboard shortcuts.
