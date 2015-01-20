@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jkup/shortcut.svg?branch=master)](https://travis-ci.org/jkup/shortcut)
+
 Shortcut.js
 ========
 
