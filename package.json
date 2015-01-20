@@ -1,0 +1,42 @@
+{
+    "name": "shortcutjs",
+    "version": "0.1.0",
+    "description": "A keyboard shortcut library",
+    "homepage": "https://github.com/jkup/shortcut",
+    "author": {
+        "name": "Jon Kuperman",
+        "url": "http://www.jonkuperman.com/"
+    },
+    "keywords": [
+        "aria",
+        "accessibility",
+        "keyboard",
+        "shortcut",
+        "library",
+        "javascript"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jkup/shortcut.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jkup/shortcut/issues"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-jasmine": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.10"
+    },
+    "main": "shortcut.js",
+    "files": [
+        "shortcut.js",
+        "shortcut.min.js",
+        "LICENSE"
+    ]
+}
