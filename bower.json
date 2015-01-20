@@ -1,0 +1,26 @@
+{
+  "name": "shortcutjs",
+  "main": "shortcut.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jkup/shortcut",
+  "authors": [
+    "Jon Kuperman <jon.kuperman@gmail.com>"
+  ],
+  "description": "A keyboard shortcut library",
+  "keywords": [
+    "keyboard",
+    "shortcut",
+    "library",
+    "accessibility",
+    "aria"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "spec"
+  ]
+}
