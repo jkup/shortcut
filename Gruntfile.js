@@ -6,6 +6,7 @@ module.exports = function (grunt) {
             src: 'shortcut.js',
             options: {
                 specs: 'spec/*Spec.js',
+                helpers: 'spec/*Helper.js',
                 vendor: [
                     'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
                     'https://raw.githubusercontent.com/velesin/jasmine-jquery/master/lib/jasmine-jquery.js'

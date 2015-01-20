@@ -11,19 +11,13 @@
 
   document.addEventListener('keypress', function(e) {
     var shortcut = keyCodeMap[e.keyCode];
-    var shortcutEvent;
 
     if ( typeof shortcut === undefined ) {
       return;
     }
 
-    if (window.CustomEvent) {
-      shortcutEvent = new CustomEvent(shortcut);
-    } else {
-      shortcutEvent = document.createEvent(shortcut);
-      shortcutEvent.initCustomEvent(shortcut, true, true);
-    }
-
+    var shortcutEvent = document.createEvent('CustomEvent');
+    shortcutEvent.initCustomEvent(shortcut, false, false, null);
     document.dispatchEvent(shortcutEvent);
   });
 
