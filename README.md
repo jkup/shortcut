@@ -23,6 +23,18 @@ document.addEventListener('shortcutNextItem', function() {
 });
 ```
 
+## Installation
+
+With bower
+
+    bower install shortcutjs
+
+Or, just stick shortcut.js or shortcut.min.js in your project
+
+## Contributing
+
+Please review our contributing guidelines [here](CONTRIBUTING.md)
+
 ## Standardization
 
 Most of the big web applications ( Facebook, Twitter ) have a handy set of keyboard shortcuts but there is no standardization amongst these sites. A shared library such as shortcut.js could help web applications share a common set of keyboard shortcuts.
