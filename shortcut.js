@@ -11,9 +11,10 @@
 
   document.addEventListener('keypress', function(e) {
     var shortcut = keyCodeMap[e.keyCode];
+    var tagName = document.activeElement.tagName;
 
-    if ( typeof shortcut === undefined ) {
-      return;
+    if ( typeof shortcut === undefined || (tagName && tagName !== 'BODY' )) {
+        return;
     }
 
     var shortcutEvent = document.createEvent('CustomEvent');
