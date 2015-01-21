@@ -3,6 +3,7 @@
   var keyCodeMap = {
     46:  'shortcutLoadItems',   // .
     47:  'shortcutSearchItems', // /
+    63:  'shortcutShowHelp',    // ?
     106: 'shortcutNextItem',    // j
     107: 'shortcutPrevItem',    // k
     110: 'shortcutNewItem',     // n
