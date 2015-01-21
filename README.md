@@ -15,6 +15,7 @@ Shortcut | Event Name
     o    | shortcutOpenItem
     /    | shortcutSearchItems
     .    | shortcutLoadItems
+    ?    | shortcutShowHelp
 
 ## Listening for an event
 ```js

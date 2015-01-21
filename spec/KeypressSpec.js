@@ -11,6 +11,12 @@ describe("test keypress events", function() {
         expect('shortcutSearchItems').toHaveBeenTriggeredOn(document);
     });
 
+    it("tests that the question mark key was pressed", function() {
+        var spy = spyOnEvent(document, 'shortcutShowHelp');
+        simulateKeypress('?');
+        expect('shortcutShowHelp').toHaveBeenTriggeredOn(document);
+    });
+
     it("tests that the j key was pressed", function() {
         var spy = spyOnEvent(document, 'shortcutNextItem');
         simulateKeypress('j');
