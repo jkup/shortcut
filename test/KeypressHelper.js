@@ -4,4 +4,4 @@ function simulateKeypress(key) {
     event.keyCode = keyCode;
     event.initEvent('keypress');
     document.dispatchEvent(event);
-};
+}

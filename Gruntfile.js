@@ -12,20 +12,20 @@ module.exports = function (grunt) {
         jasmine: {
             src: 'shortcut.js',
             options: {
-                specs: 'spec/**/*Spec.js',
-                helpers: 'spec/**/*Helper.js',
+                specs: 'test/**/*Spec.js',
+                helpers: 'test/**/*Helper.js',
                 vendor: [
                     'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
-                    'spec/jasmine-jquery.js'
+                    'test/jasmine-jquery.js'
                 ]
             }
         },
         jshint: {
-            files: ['shortcut.js', 'test/**/*.js']
+            files: ['shortcut.js', 'test/**/*.js', '!test/jasmine-jquery.js']
         },
         watch: {
             files: ['<%= jshint.files %>'],
-            tasks: ['jshint', 'qunit']
+            tasks: ['jshint', 'jasmine']
         }
     });
 

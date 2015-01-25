@@ -10,12 +10,18 @@
     111: 'shortcutOpenItem',    // o
   };
 
+  var eventBlacklist = {
+    'input': true,
+    'textarea': true,
+    'select': true
+  };
+
   document.addEventListener('keypress', function(e) {
-    var tagName = document.activeElement.tagName;
+    var tagName = document.activeElement.tagName.toLowerCase();
     var shortcut = keyCodeMap[e.keyCode];
     var shortcutEvent;
 
-    if ( typeof shortcut === undefined || (tagName && tagName !== 'BODY' )) {
+    if ( typeof shortcut === undefined || eventBlacklist[tagName]) {
         return;
     }
 
