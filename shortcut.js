@@ -10,15 +10,28 @@
     111: 'shortcutOpenItem',    // o
   };
 
+  var keyDownCodeMap = {
+    8:   'shortcutBackspace',   // Backspace
+    9:   'shortcutTab',         // Tab
+    13:  'shortcutReturn',      // Return (enter)
+    16:  'shortcutShift',       // Shift
+    27:  'shortcutEscape',      // Escape
+    32:  'shortcutSpace',       // Space
+    37:  'shortcutLeftArrow',   // Left Arrow
+    38:  'shortcutUpArrow',     // Up Arrow
+    39:  'shortcutRightArrow',  // Right Arrow
+    40:  'shortcutDownArrow',   // Down Arrow
+  };
+
   var eventBlacklist = {
     'input': true,
     'textarea': true,
     'select': true
   };
 
-  document.addEventListener('keypress', function(e) {
+  var pressHandler = function(e) {
     var tagName = document.activeElement.tagName.toLowerCase();
-    var shortcut = keyCodeMap[e.keyCode];
+    var shortcut = keyCodeMap[e.keyCode] || keyDownCodeMap[e.keyCode];
     var shortcutEvent;
 
     if ( typeof shortcut === undefined || eventBlacklist[tagName]) {
@@ -33,6 +46,8 @@
     }
 
     document.dispatchEvent(shortcutEvent);
-  });
+  };
 
+  document.addEventListener('keypress', pressHandler);
+  document.addEventListener('keydown',  pressHandler);
 })();

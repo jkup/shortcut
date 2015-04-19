@@ -7,15 +7,25 @@ A keyboard shortcut library, shortcut.js listens for common keyboard shortcuts a
 
 ## Shortcuts and the events they trigger
 
-Shortcut | Event Name
----------|-----------
-    j    | shortcutNextItem
-    k    | shortcutPrevItem
-    n    | shortcutNewItem
-    o    | shortcutOpenItem
-    /    | shortcutSearchItems
-    .    | shortcutLoadItems
-    ?    | shortcutShowHelp
+ Shortcut  | Event Name
+-----------|-----------
+     j     | shortcutNextItem
+     k     | shortcutPrevItem
+     n     | shortcutNewItem
+     o     | shortcutOpenItem
+     /     | shortcutSearchItems
+     .     | shortcutLoadItems
+     ?     | shortcutShowHelp
+     ←     | shortcutLeftArrow
+     ↑     | shortcutUpArrow
+     →     | shortcutRightArrow
+     ↓     | shortcutDownArrow
+ Backspace | shortcutBackspace
+ Tab       | shortcutTab
+ Return    | shortcutReturn
+ Shift     | shortcutShift
+ Escape    | shortcutEscape
+ Space     | shortcutSpace
 
 ## Listening for an event
 ```js
